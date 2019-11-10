@@ -43,7 +43,7 @@ body {
 .post-list {
   display: flex;
   justify-content: center;
-  background: F2F2F2;
+  background: #f2f2f2;
 }
 
 /* post component */
@@ -61,7 +61,7 @@ body {
   display: flex;
   align-items: center;
 }
-.post-author > img {
+.avatar {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -75,4 +75,32 @@ body {
 
 .post-message {
   padding: 15px;
+}
+
+/* comment component */
+.comment {
+  display: flex;
+}
+
+.comment-content {
+  background: #eee;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.comment-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.comment-author {
+  margin-right: 5px;
+}
+
+hr {
+  border-top: 1px solid #eee;
 }
