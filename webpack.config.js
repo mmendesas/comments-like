@@ -15,8 +15,15 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
+          loader: 'babel-loader' // make browser understand es6
         }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          { loader: 'style-loader' }, // put css inside main html
+          { loader: 'css-loader' } // enable import inside css file
+        ]
       }
     ]
   }
