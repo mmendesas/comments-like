@@ -1,13 +1,13 @@
 import React from 'react';
-
 import './App.css';
-import luigi from './assets/luigi.png';
+
+import Header from './components/Header';
 
 function App() {
   return (
     <>
+      <Header />
       <h1>First React steps</h1>
-      <img src={luigi} width="200"></img>
     </>
   );
 }
