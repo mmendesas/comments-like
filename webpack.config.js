@@ -24,6 +24,12 @@ module.exports = {
           { loader: 'style-loader' }, // put css inside main html
           { loader: 'css-loader' } // enable import inside css file
         ]
+      },
+      {
+        test: /.*\.(gif|png|jpe?g)$/i,
+        use: {
+          loader: 'file-loader' // enable file import (png)
+        }
       }
     ]
   }
